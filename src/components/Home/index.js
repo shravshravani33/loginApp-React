@@ -5,9 +5,7 @@ class Home extends Component {
   state = {login: false}
 
   onLoginClick = () => {
-    const {login} = this.state
-
-    this.setState(prevState => ({login: !login}))
+    this.setState(prevState => ({login: !prevState.login}))
   }
 
   render() {
